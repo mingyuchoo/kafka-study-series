@@ -1,0 +1,17 @@
+{
+  "name": "kafka",
+  "version": "1.0.0",
+  "description": "You can run docker containers for kafka",
+  "main": "docker-compose.yml",
+  "scripts": {
+    "docker:up": "docker-compose --file docker-compose.yml up --build --detach",
+    "docker:down": "docker-compose --file docker-compose.yml down --volumes --remove-orphans",
+    "docker:exec": "docker exec -it kafka /bin/sh"
+  },
+  "keywords": [
+    "docker",
+    "kafka"
+  ],
+  "author": "mingyuchoo@gmail.com",
+  "license": "BSD 3-Clause License"
+}
